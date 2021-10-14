@@ -7,3 +7,5 @@ Mono-repo for all docker images.
 Based on [Volumerize](https://github.com/blacklabelops/volumerize):
 
 - [MongoDB Backup](./backups/mongodb/README.md)
+- [MySQL Backup](./backups/mysql/README.md)
+
