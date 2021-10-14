@@ -18,7 +18,7 @@ MONGO_USERNAME MONGO_PASSWORD MONGO_HOST MONGO_PORT
 ## Example with Docker Compose
 
 ```YAML
-version: "3"
+version: "2"
 
 services:
   mongodb:
