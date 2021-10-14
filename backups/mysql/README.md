@@ -32,7 +32,7 @@ services:
       - mariadb:/var/lib/mysql
 
   volumerize:
-    build: tractrs-docker-mysql-backup-78c67c3d9d5a
+    image: tractr/mysql-backup
     environment:
       - VOLUMERIZE_SOURCE=/source
       - VOLUMERIZE_TARGET=file:///backup

@@ -32,7 +32,7 @@ services:
       - mongodb:/data/db
 
   volumerize:
-    build: ./prepost_strategies/mongodb/
+    image: tractr/mongodb-backup
     environment:
       - VOLUMERIZE_SOURCE=/source
       - VOLUMERIZE_TARGET=file:///backup
