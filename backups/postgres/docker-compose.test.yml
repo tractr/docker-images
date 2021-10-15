@@ -1,0 +1,42 @@
+version: "2"
+
+services:
+  postgres:
+    image: postgres:13-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=somedatabase
+
+  volumerize:
+    build: ./
+    environment:
+      - VOLUMERIZE_SOURCE=/source
+      - VOLUMERIZE_TARGET=file:///backup
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=somedatabase
+    volumes:
+      - volumerize-cache:/volumerize-cache
+      - ./backup:/backup
+    depends_on:
+      - postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 80:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=xxxxxxxx
+    depends_on:
+      - postgres
+
+volumes:
+  volumerize-cache:
+  postgres:
