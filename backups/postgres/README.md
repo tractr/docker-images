@@ -34,7 +34,7 @@ services:
       - POSTGRES_DB=somedatabase
 
   volumerize:
-    build: tractrs-docker-postgres-backup-78c67c3d9d5a
+    image: tractr/postgres-backup
     environment:
       - VOLUMERIZE_SOURCE=/source
       - VOLUMERIZE_TARGET=file:///backup
