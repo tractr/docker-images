@@ -8,6 +8,7 @@ With this prepost strategy you can create dump of your MongoDB containers and sa
 
 Aside of the required environment variables by Volumerize, this prepost strategy will require a couple of extra variables.
 MONGO_USERNAME MONGO_PASSWORD MONGO_HOST MONGO_PORT
+
 | Name           | Description                                                |
 | -------------- | ---------------------------------------------------------- |
 | MONGO_USERNAME | Username of the user who will perform the restore or dump. |
