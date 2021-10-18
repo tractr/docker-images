@@ -8,6 +8,7 @@ Based on [Volumerize](https://github.com/blacklabelops/volumerize):
 
 - [MongoDB Backup](./backups/mongodb/README.md)
 - [MySQL Backup](./backups/mysql/README.md)
+- [Postgres Backup](./backups/postgres/README.md)
 
 ## Servers
 
