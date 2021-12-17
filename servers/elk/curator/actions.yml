@@ -26,5 +26,5 @@ actions:
       direction: older
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 45
+      unit_count: ${CURATOR_RETENTION_DAYS:45}
       exclude:

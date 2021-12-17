@@ -12,3 +12,5 @@ You may need to override these files.
 
 A configuration for Elastic Search is also provided. A script to run Curator is available with the `run-curator` command.
 To run this from your host : `docker exec container_name run-curator`.
+
+The log retention is set to 45 day by default. This can be change with environment variable `CURATOR_RETENTION_DAYS`.
