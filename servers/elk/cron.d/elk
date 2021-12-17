@@ -1,0 +1,2 @@
+# Run ELK curator
+*/20 0 * * * root /bin/run-curator > /tmp/logs.curator

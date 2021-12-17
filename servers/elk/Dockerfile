@@ -20,3 +20,5 @@ COPY curator/*.yml /etc/curator/
 COPY curator/run-curator.sh /bin/run-curator
 RUN chmod +x /bin/run-curator
 
+# Copy CRON
+COPY cron.d/* /etc/cron.d/
