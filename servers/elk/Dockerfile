@@ -1,13 +1,13 @@
-FROM sebp/elk:521
+FROM sebp/elk:7.16.1
 
 # Update apt-get
 RUN apt-get update
 # Install pip
-RUN apt-get install -y python-pip
+RUN apt-get install -y python3-pip
 # Upgrade
 RUN pip install --upgrade pip
 # Install ES Curator with pip
-RUN pip install elasticsearch-curator
+RUN pip install -U elasticsearch-curator==5.8.4
 # Cleaning
 RUN apt-get autoclean
 
