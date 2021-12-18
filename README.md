@@ -13,4 +13,5 @@ Based on [Volumerize](https://github.com/blacklabelops/volumerize):
 ## Servers
 
 - [Nginx with dynamic config files](./servers/nginx-generated-envs/README.md)
+- [ELK Stack](./servers/elk/README.md)
 
