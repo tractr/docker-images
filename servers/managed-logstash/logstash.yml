@@ -1,0 +1,9 @@
+http.host: 0.0.0.0
+xpack:
+  management:
+    enabled: true
+    pipeline:
+      id: ${ES_PIPELINE_ID}
+    elasticsearch:
+      cloud_id: ${ES_CLOUD_ID}
+      cloud_auth: ${ES_CLOUD_AUTH}
