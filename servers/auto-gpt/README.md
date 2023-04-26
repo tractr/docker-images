@@ -29,7 +29,7 @@ docker run -p 7681:7681 \
 
 To check all available options, see the [env file](https://github.com/Significant-Gravitas/Auto-GPT/blob/master/.env.template).
 
-More info [here](https://significant-gravitas.github.io/Auto-GPT/configuration/).
+More info [here](https://significant-gravitas.github.io/Auto-GPT/).
 
 ## Build
 
