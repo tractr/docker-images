@@ -23,6 +23,7 @@ docker run -p 7681:7681 \
   -e REDIS_PORT=6379 \
   -e REDIS_PASSWORD=<PASSWORD> \
   -e WIPE_REDIS_ON_START=False \
+  -e AUTO_GPT_ARGS="--gpt4only --debug" \
   tractr/auto-gpt:0.2.2
 ```
 
