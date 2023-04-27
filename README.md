@@ -14,6 +14,7 @@ Based on [Volumerize](https://github.com/blacklabelops/volumerize):
 
 - [Nginx with dynamic config files](./servers/nginx-generated-envs/README.md)
 - [ELK Stack](./servers/elk/README.md)
+- [Auto-GPT](./servers/auto-gpt/README.md)
 
 ## Workers
 

@@ -14,6 +14,8 @@ It only accepts one connection at a time.
 docker run -p 7681:7681 -e OPENAI_API_KEY=<apikey> tractr/auto-gpt:0.2.2
 ```
 
+Then open `http://localhost:7681` in your browser.
+
 ### More options
 
 ```shell
