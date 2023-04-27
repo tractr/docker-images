@@ -4,6 +4,8 @@ Docker image with [Auto GPT](https://github.com/Significant-Gravitas/Auto-GPT) a
 
 You should serve this container behind a reverse proxy with HTTPS and authentication.
 
+It only accepts one connection at a time.
+
 ## Usage
 
 ### Minimalist

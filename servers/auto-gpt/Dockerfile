@@ -24,4 +24,4 @@ EXPOSE 7681
 
 # Start web terminal with auto-gpt
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["ttyd", "-p", "7681", "/home/appuser/start.sh"]
+CMD ["ttyd", "-p", "7681", "-m", "1", "/home/appuser/start.sh"]
