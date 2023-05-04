@@ -2,7 +2,6 @@
 FROM significantgravitas/auto-gpt:v0.3.0
 
 # Install dependencies
-USER root
 RUN apt install -y build-essential cmake git libjson-c-dev libwebsockets-dev tini && \
     rm -rf /var/lib/apt/lists/*
 
@@ -15,8 +14,6 @@ RUN cd ttyd && \
     make && \
     make install
 
-USER appuser
-
 ADD start.sh ./start.sh
 
 # Expose web terminal port
@@ -24,4 +21,4 @@ EXPOSE 7681
 
 # Start web terminal with auto-gpt
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["ttyd", "-p", "7681", "-m", "1", "/home/appuser/start.sh"]
+CMD ["ttyd", "-p", "7681", "-m", "1", "/app/start.sh"]
