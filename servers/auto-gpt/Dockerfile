@@ -1,5 +1,5 @@
 # Base image with auto-gpt
-FROM significantgravitas/auto-gpt:0.2.2
+FROM significantgravitas/auto-gpt:v0.3.0
 
 # Install dependencies
 USER root
