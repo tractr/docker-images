@@ -8,6 +8,8 @@ RUN apt install -y build-essential cmake git libjson-c-dev libwebsockets-dev tin
 # Build ttyd
 RUN git clone https://github.com/tsl0922/ttyd.git
 RUN cd ttyd && \
+    git checkout a2312cbfabcd085664626d4f16877125f2d8ad96
+RUN cd ttyd && \
     mkdir build && \
     cd build && \
     cmake .. && \
@@ -24,4 +26,4 @@ EXPOSE 7681
 
 # Start web terminal with auto-gpt
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["ttyd", "-p", "7681", "-m", "1", "/app/start.sh"]
+CMD ["ttyd", "-W", "-p", "7681", "-m", "1", "/app/start.sh"]
