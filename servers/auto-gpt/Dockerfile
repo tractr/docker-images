@@ -1,5 +1,5 @@
 # Base image with auto-gpt
-FROM significantgravitas/auto-gpt:v0.3.0
+FROM significantgravitas/auto-gpt:v0.3.1
 
 # Install dependencies
 RUN apt install -y build-essential cmake git libjson-c-dev libwebsockets-dev tini && \
@@ -15,6 +15,9 @@ RUN cd ttyd && \
     make install
 
 ADD start.sh ./start.sh
+
+# Workaround issue https://github.com/Significant-Gravitas/Auto-GPT/issues/3821
+RUN mkdir /app/data
 
 # Expose web terminal port
 EXPOSE 7681

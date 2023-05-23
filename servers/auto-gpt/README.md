@@ -11,7 +11,7 @@ It only accepts one connection at a time.
 ### Minimalist
 
 ```shell
-docker run -p 7681:7681 -e OPENAI_API_KEY=<apikey> tractr/auto-gpt:0.3.0
+docker run -p 7681:7681 -e OPENAI_API_KEY=<apikey> tractr/auto-gpt:0.3.1
 ```
 
 Then open `http://localhost:7681` in your browser.
@@ -28,7 +28,7 @@ docker run -p 7681:7681 \
   -e REDIS_PASSWORD=<PASSWORD> \
   -e WIPE_REDIS_ON_START=False \
   -e AUTO_GPT_ARGS="--gpt4only --debug" \
-  tractr/auto-gpt:0.3.0
+  tractr/auto-gpt:0.3.1
 ```
 
 To check all available options, see the [env file](https://github.com/Significant-Gravitas/Auto-GPT/blob/master/.env.template).
@@ -40,12 +40,12 @@ More info [here](https://significant-gravitas.github.io/Auto-GPT/).
 To build the image, run:
 
 ```shell
-docker build -t tractr/auto-gpt:0.3.0 .
+docker build -t tractr/auto-gpt:0.3.1 .
 docker build -t tractr/auto-gpt:latest .
 ```
 ### Push to Docker Hub
 
 ```shell
-docker push tractr/auto-gpt:0.3.0
+docker push tractr/auto-gpt:0.3.1
 docker push tractr/auto-gpt:latest
 ```
