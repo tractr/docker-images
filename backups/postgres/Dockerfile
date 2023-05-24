@@ -1,7 +1,9 @@
-FROM blacklabelops/volumerize:1.7
+FROM tractr/volumerize:1.8
 
-RUN apk add --no-cache \
-    postgresql-client
+ARG POSTGRES_VERSION=15
+
+RUN apk update
+RUN apk add --no-cache postgresql${POSTGRES_VERSION}-client
 
 COPY postexecute /postexecute
 COPY preexecute /preexecute
