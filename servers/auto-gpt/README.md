@@ -40,12 +40,12 @@ More info [here](https://significant-gravitas.github.io/Auto-GPT/).
 To build the image, run:
 
 ```shell
-docker build -t tractr/auto-gpt:0.3.1 .
+docker build -t tractr/auto-gpt:0.4.0 .
 docker build -t tractr/auto-gpt:latest .
 ```
 ### Push to Docker Hub
 
 ```shell
-docker push tractr/auto-gpt:0.3.1
+docker push tractr/auto-gpt:0.4.0
 docker push tractr/auto-gpt:latest
 ```
