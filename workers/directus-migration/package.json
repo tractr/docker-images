@@ -1,0 +1,14 @@
+{
+  "name": "directus-migration",
+  "version": "0.1.0",
+  "description": "allow migration between 2 directus instances",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^4.0.0"
+  }
+}
